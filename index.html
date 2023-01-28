@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Amazon Display</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer="defer" src="js/main.js"></script>
+    <link href="static/meta/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/meta/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/meta/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/meta/favicon-16x16.png">
+    <link rel="mask-icon" href="static/meta/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="preconnect" href="https://cdn.sanity.io">
+    <link rel="manifest" href="static/meta/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="description" content="Display — A care oriented design studio">
+    <meta name="keywords" content="disability,studio,Australia,design,agency,branding,care,NDIS">
+    <meta name="theme-color" content="#000000">
+    <meta name="robots" content="all">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Display ">
+    <meta name="twitter:description" content="Display — A care oriented design studio">
+    <meta name="twitter:image" content="https://display.care/static/meta/og.jpg">
+    <meta property="og:url" content="https://display.care" key="ogurl">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Display ">
+    <meta property="og:description" content="Display — A care oriented design studio">
+    <meta property="og:image" content="https://display.care/static/meta/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-213798478-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-213798478-1');
+    </script>
+</head>
+
+<body class="sans f0 lh100">
+
+    <div id="loader" class="fix top left right bottom bg-yellow c-red z10 df fc jcc aic">
+        <div id="spinner"><canvas id="spinner-canvas"></canvas></div><span id="loader-percent">0</span>
+    </div>
+    <noscript id="no-js" class="fix top left right bottom bg-red c-white z10 df jcc aic">
+        <span
+            class="loader-percent">Please enable JS to view this site
+        </span>
+    </noscript>
+    <div id="app" data-hydra-root data-scroll-content>
+        <main data-hydra-content="home" class="bg-white" id="home">
+            <div id="sail-white" class="sail pen fix top left bottom right z8"></div>
+            <aside id="page-links" class="page-links z9 pen">
+                <a id="page-resources" class="pea" href="/resources/">
+                    <div class="page-link--bg bg-red fx"></div>
+                    <div class="page-link--fg df fc jcb aic"><svg viewBox="0 0 46 46" fill="none">
+                            <use xlink:href="#p-resources"></use>
+                        </svg>
+                        <div class="df aic jcb serif c-white oh"><span class="name">Resources</span></div>
+                    </div>
+                </a>
+                <a id="page-works" class="pea" href="/works/">
+                    <div class="page-link--bg bg-orange fx"></div>
+                    <div class="page-link--fg df fc jcb aic"><svg width="46" height="46" viewBox="0 0 46 46"
+                            fill="none">
+                            <use xlink:href="#p-works"></use>
+                        </svg>
+                        <div class="df aic jcb serif c-white oh"><span class="name"
+                                style="transform: translate(0%, 0px) rotate(180deg);">Works</span></div>
+                    </div>
+                </a>
+                <a aria-label="about" id="page-about" class="pen" href="/">
+                    <div class="page-link--bg bg-blue"></div>
+                </a>
+            </aside>
+            <nav class="z7 df jcb aic pen">
+                <div class="left-pane df aic">
+                    <picture class="logo"><img width="1" height="1" alt="display logo"
+                            src="static/svg/logo-orange.svg">
+                    </picture><span class="serif brand">AWS<span class="sans"></span></span>
+                    <p class="ttu desc">Choose the right <br>purpose-built engine</p>
+                </div>
+                <div class="right">
+                    <a id="nav-contact" class="c-white bg-orange pea aic"
+                        href="mailto:mustansir.bohari21@vit.edu" target="_blank" rel="noreferrer nofollow"><span>Contact</span>
+                        <span class="arrow df"><svg viewBox="0 0 17 12" fill="none">
+                                <use xlink:href="#d-rarr"></use>
+                            </svg> 
+                        </span>
+                    </a>
+                    <button id="mobile-trigger" class="pea df fc jcb z9"><span></span> <span></span></button>
+                </div>
+                <div id="nav-sail" class="fix top left bg-white c-white">
+                    <ul class="fw500 serif">
+                        <li>
+                            <div class="nav-el--bg top left right bottom bg-teal-2"></div>
+                            <a class="df ais jcb" href="mailto:mustansir.bohari21@vit.edu" target="_blank"
+                                rel="noreferrer nofollow">
+                                <div><span><span class="nav-line">Contact</span> </span><svg fill="none" class="rarr"
+                                        viewBox="0 0 28 28">
+                                        <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="1.5" d="M2 14.32h24.64M19.82 7.5l6.82 6.82-6.82 6.82" />
+                                    </svg></div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="nav-el--bg top left right bottom bg-red"></div>
+                            <a class="df ais jcb" href="/resources/">
+                                <div><svg fill="none" viewBox="0 0 46 46">
+                                        <circle cx="23" cy="23" r="23" fill="#fff" />
+                                        <path stroke="#FF667D" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M14.15 15.92h5.31A3.54 3.54 0 0123 19.46v12.39a2.65 2.65 0 00-2.65-2.66h-6.2V15.92z" />
+                                        <path stroke="#FF667D" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M31.85 15.92h-5.31A3.54 3.54 0 0023 19.46v12.39a2.65 2.65 0 012.65-2.66h6.2V15.92z" />
+                                    </svg> <span><span class="nav-line">Resources</span></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="nav-el--bg top left right bottom bg-orange"></div>
+                            <a class="df ais jcb" href="/works/">
+                                <div><svg fill="none" viewBox="0 0 46 46">
+                                        <circle cx="23" cy="23" r="23" fill="#fff" />
+                                        <path stroke="#FF9776" stroke-linejoin="round" stroke-width="2"
+                                            d="M23 15s.75 4.13 2.43 5.92C27.11 22.7 31 23.5 31 23.5s-3.89.8-5.57 2.58C23.75 27.87 23 32 23 32s-.75-4.13-2.43-5.92C18.89 24.3 15 23.5 15 23.5s3.89-.8 5.57-2.58C22.25 19.13 23 15 23 15z" />
+                                    </svg> <span><span class="nav-line">Works</span></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="nav-el--bg top left right bottom bg-blue"></div>
+                            <a class="df ais jcb" href="/">
+                                <div><svg fill="none" viewBox="0 0 46 49">
+                                        <ellipse cx="23" cy="24.68" fill="#fff" rx="23" ry="23.82" />
+                                        <path stroke="#8283DA" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M23 15.52v3.66M23 30.18v3.66M16.75 18.2l2.5 2.6M26.75 28.56l2.5 2.6M14.15 24.68h3.54M28.3 24.68h3.55M16.75 31.16l2.5-2.6M26.75 20.8l2.5-2.6" />
+                                    </svg> <span><span class="nav-line">Home</span></span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="page-wrapper">
+                <div class="page-bg" data-scroll-section data-scroll-track="bg"></div>
+                <header class="hero" data-scroll-section>
+                    <h1 class="title serif f6 fw500">
+                        <span class="title-line aib"><span
+                                id="title-shaping">Amazon</span> 
+                                <span class="the oh db" id="title-the">
+                                    <!-- <svg class="db" viewBox="0 0 75 52" fill="none">
+                                    <path fill="#FF9776"
+                                        d="M1.1 43c-.99 4.84.65 7.46 5.56 7.85 3.86-2.03 5.3-3.34 9.5-6.09l-.27-.4c-3.73 2.17-5.04 3.15-6.48 3.68-1.77.2-3.34-1.38-2.23-5.7L14.2 20.8l5.7-.2 2.55-.2.26-1.3-7.99.06 2.3-8.05-.72-.07-5.57 4-2.03 4.12-5.3.07-.27 1.3 1.25-.12 3.8.13L1.1 42.99zm14.86 7.46l6.68-.46.59-1.44c5.04-11 14.47-26 17.15-27.1 1.18.39 1.7.98 1.7 2.09 0 2.29-6.6 20.62-6.6 24.42a8.02 8.02 0 003.8 3.27l9.29-4.78-.26-.39-7.2 3.47c.13-2.1 7.65-21.67 7.65-25.6 0-3.01-1.83-5.63-5.76-5.7-4.38.4-15.32 18.93-20.36 30.32h-.2L37.9 2.07c-.14-.39-.72-.91-1.05-1.18L24.28 6.33v.52l6.61-2.75-14.93 46.36zm34.35-9.63c-.13 4.72 2.69 9.37 8.32 10.15 2.95-1.18 8.64-5.04 10.6-6.22l-.26-.78c-2.03 1.3-4.84 3.07-7.79 4.78-3.27-.4-4.51-3.6-4.51-8.78 0-.72 0-1.5.06-2.35 1.18 0 10.08-4.98 12.05-6.36 2.81-1.9 6.22-5.95 6.22-8.31 0-2.23-2.75-4-3.47-4-9.3-.71-20.89 10.68-21.22 21.87zm6.49-3.99c.26-7.33 6.54-17.09 11.78-17.09.79 0 1.11.59 1.11 1.57 0 4.26-9.95 15.52-12.9 15.52z" />
+                                    </svg>  -->
+                                    <svg class="db" viewBox="0 0 40 46" fill="none">
+                                        <path fill="#FF9776"
+                                            d="M4.18 36.77a5.1 5.1 0 01-3.37-2.73 5.85 5.85 0 01-.56-4.3 6.24 6.24 0 012.81-3.6c1.69-1.05 4.45-1.72 8.29-2 3.84-.3 6.41-.78 7.72-1.45-1.4-.67-4.02-1.14-7.86-1.43-3.75-.39-6.46-1.06-8.15-2.01a5.68 5.68 0 01-2.8-3.45 5.36 5.36 0 01.55-4.45 5.57 5.57 0 013.51-2.73 5.45 5.45 0 014.36.72c1.59 1.05 3.46 3.2 5.62 6.46 2.15 3.16 3.88 5.17 5.2 6.03-.1-1.53-.99-4.07-2.67-7.61-1.69-3.54-2.53-6.32-2.53-8.33 0-1.63.51-3.02 1.54-4.17A5.49 5.49 0 0119.92 0c1.59 0 2.9.57 3.93 1.72a5.74 5.74 0 011.68 4.17c0 2.01-.84 4.79-2.52 8.33-1.69 3.54-2.58 6.08-2.67 7.61 1.3-.86 3.04-2.87 5.2-6.03 2.15-3.26 4.02-5.41 5.61-6.46a5.45 5.45 0 014.36-.72c1.59.38 2.76 1.3 3.5 2.73.76 1.43.9 2.92.43 4.45a5.65 5.65 0 01-2.67 3.45c-1.69 1.05-4.45 1.72-8.29 2-3.84.3-6.41.77-7.72 1.44 1.4.67 3.98 1.2 7.72 1.58 3.84.3 6.6.91 8.29 1.87a5.67 5.67 0 012.81 3.45 5.36 5.36 0 01-.56 4.45 5.57 5.57 0 01-3.51 2.73c-1.5.38-2.95.14-4.36-.72-1.59-1.05-3.46-3.16-5.62-6.32-2.15-3.25-3.88-5.31-5.2-6.17.1 1.53.99 4.07 2.68 7.6 1.68 3.55 2.52 6.33 2.52 8.34 0 1.63-.56 3.02-1.68 4.16a5.05 5.05 0 01-3.93 1.73c-1.6 0-2.95-.58-4.08-1.73a6.02 6.02 0 01-1.54-4.16c0-2.01.84-4.79 2.53-8.33 1.68-3.54 2.57-6.08 2.66-7.61-1.3.86-3.04 2.92-5.2 6.17-2.15 3.16-4.02 5.27-5.61 6.32-1.4.86-2.9 1.1-4.5.72z" />
+                                    </svg> 
+                                </span>
+                        </span>
+                        <span class="title-line df aic">
+                            <span class="title-star df jcc aic">
+                                <svg viewBox="0 0 40 46" fill="none">
+                                    <path fill="#FF9776"
+                                        d="M4.18 36.77a5.1 5.1 0 01-3.37-2.73 5.85 5.85 0 01-.56-4.3 6.24 6.24 0 012.81-3.6c1.69-1.05 4.45-1.72 8.29-2 3.84-.3 6.41-.78 7.72-1.45-1.4-.67-4.02-1.14-7.86-1.43-3.75-.39-6.46-1.06-8.15-2.01a5.68 5.68 0 01-2.8-3.45 5.36 5.36 0 01.55-4.45 5.57 5.57 0 013.51-2.73 5.45 5.45 0 014.36.72c1.59 1.05 3.46 3.2 5.62 6.46 2.15 3.16 3.88 5.17 5.2 6.03-.1-1.53-.99-4.07-2.67-7.61-1.69-3.54-2.53-6.32-2.53-8.33 0-1.63.51-3.02 1.54-4.17A5.49 5.49 0 0119.92 0c1.59 0 2.9.57 3.93 1.72a5.74 5.74 0 011.68 4.17c0 2.01-.84 4.79-2.52 8.33-1.69 3.54-2.58 6.08-2.67 7.61 1.3-.86 3.04-2.87 5.2-6.03 2.15-3.26 4.02-5.41 5.61-6.46a5.45 5.45 0 014.36-.72c1.59.38 2.76 1.3 3.5 2.73.76 1.43.9 2.92.43 4.45a5.65 5.65 0 01-2.67 3.45c-1.69 1.05-4.45 1.72-8.29 2-3.84.3-6.41.77-7.72 1.44 1.4.67 3.98 1.2 7.72 1.58 3.84.3 6.6.91 8.29 1.87a5.67 5.67 0 012.81 3.45 5.36 5.36 0 01-.56 4.45 5.57 5.57 0 01-3.51 2.73c-1.5.38-2.95.14-4.36-.72-1.59-1.05-3.46-3.16-5.62-6.32-2.15-3.25-3.88-5.31-5.2-6.17.1 1.53.99 4.07 2.68 7.6 1.68 3.55 2.52 6.33 2.52 8.34 0 1.63-.56 3.02-1.68 4.16a5.05 5.05 0 01-3.93 1.73c-1.6 0-2.95-.58-4.08-1.73a6.02 6.02 0 01-1.54-4.16c0-2.01.84-4.79 2.53-8.33 1.68-3.54 2.57-6.08 2.66-7.61-1.3.86-3.04 2.92-5.2 6.17-2.15 3.16-4.02 5.27-5.61 6.32-1.4.86-2.9 1.1-4.5.72z" />
+                                </svg> 
+                            </span>
+                            <span id="title-care"></span>
+                        </span>
+                    </h1>
+                    <p class="title-desc">We research, plan, design and innovate to provide better outcomes for those 
+                        who create and build.</p>
+                    <div id="hero-anim--container">
+                        <div id="hero-anim">
+                            <canvas id="hero-anim--canvas"></canvas>
+                        </div>                        
+                        <div id="hero-anim">
+                            <video autoplay muted id="hero-anim-video">
+                                <source src="static/videos/AWS Databases Innovate Faster.mp4">
+                            </video>
+                        </div>
+                        <div id="hero-anim--bg">                          
+                            <!-- <svg id="m-grid-bg" viewBox="0 0 337 426">
+                                <g stroke="#000" stroke-width=".91" opacity=".1">
+                                    <path
+                                        d="M337 .46H1M337 85.45H1M337 170.45H1M337 255.45H1M337 340.45H1M337 425.45H1M336.55 425V0M252.54 425V0M168.55 425V0M84.55 425V0M.55 425V0" />
+                                </g>
+                            </svg> 
+                            <svg id="d-grid-bg" viewBox="0 0 1051 375">
+                                <g stroke="#000" opacity=".1">
+                                    <path
+                                        d="M.5 0v373.45M95.95 0v373.45M191.41 0v373.45M286.86 0v373.45M382.32 0v373.45M477.77 0v373.45M573.23 0v373.45M668.68 0v373.45M764.14 0v373.45M859.59 0v373.45M955.04 0v373.45M1050.5 0v373.45M1050 .5H0M1050 93.86H0M1050 187.23H0M1050 280.59H0M1050 373.95H0" />
+                                </g>
+                            </svg> -->
+                        </div>
+                    </div>
+                    <button class="scroll-hint" id="scroll-hint" data-scroll-to="#hero-anim"
+                        aria-label="scroll hint"><span class="arrow">
+                            <svg viewBox="0 0 16 46" fill="none">
+                                <path fill="#444"
+                                    d="M7.31 45.69c.38.38 1 .38 1.38 0l6.2-6.2a.98.98 0 00-1.37-1.38L8 43.62l-5.52-5.51a.97.97 0 10-1.37 1.37l6.2 6.2zM7.03 0v45h1.94V0H7.02z" />
+                            </svg> 
+                        </span>
+                        <span class="arrow-bg"></span>
+                    </button>
+                </header>
+                <section class="bg-purple-2 about c-white" data-scroll-section>
+                    <!-- <iframe class="apnaChart" src="chart.html" frameborder="0" loading="eager"></iframe> -->
+                    <div class="df jcb about-row">
+                        <h2 class="title ttu">About Us</h2>
+                        
+                        <p class="serif desc">We work with select service providers in the database sector to develop
+                            inclusive products tailored to their needs.</p>
+                    </div>
+                    <div class="df about-row jcb">
+                        <div class="about-circle"></div>
+                        <div>
+                            <div id="about-anim--container">
+                                <div id="about-anim--bg"></div>
+                                <div id="about-anim"><canvas id="about-anim--canvas"></canvas></div>
+                            </div>
+                            <div class="df about-row about-details">
+                                <p class="about-detail">Designing for inclusivity, not only assists people with
+                                    disabilities but benefits everyone. Through our practice, ‘Display’ creates person
+                                    centred products and services that are accessible for people of all abilities.</p>
+                                <p class="about-detail">Every person differs in the way they comprehend, communicate,
+                                    see, and handle the world. We strive for our work to reflect this diversity. We
+                                    research extensively and collaborate closely only with those who share a vision
+                                    of inclusivity and accessibility for all.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="vision" data-scroll-section>
+                    <blockquote class="serif"><span class="db quote"><svg viewBox="0 0 78 76" fill="none">
+                                <path fill="#00BEA9"
+                                    d="M16.9 42.47c5.3 0 9.48 1.53 12.54 4.58 3.21 2.9 4.82 6.84 4.82 11.83 0 4.82-1.6 8.76-4.82 11.82-3.06 2.9-7.24 4.34-12.55 4.34-5.15 0-9.25-1.45-12.3-4.34C1.52 67.8 0 63.94 0 59.12v-1.93C.32 50.27 6.35 31.2 18.1 0h15.92v1.45L8.2 43.19l1.21.48v.25c2.1-.97 4.58-1.45 7.48-1.45zM61.04 0H77.2v1.45L51.4 43.19l.96.48v.25a18.8 18.8 0 017.48-1.45c5.3 0 9.5 1.53 12.55 4.58 3.22 2.9 4.82 6.84 4.82 11.83 0 4.82-1.6 8.76-4.82 11.82-3.06 2.9-7.24 4.34-12.55 4.34-5.15 0-9.25-1.45-12.3-4.34-2.9-2.9-4.35-6.76-4.35-11.58v-1.93C43.51 50.27 49.47 31.2 61.05 0z" />
+                            </svg> </span>
+                        <span class="quote-text">Born with a vision to innovate where it matters the most.</span>
+                    </blockquote>
+                    <div class="df aic details">
+                        <div id="vision-anim-bg" class="df aic jcc">
+                            <div id="vision-anim"><canvas id="vision-anim--canvas"></canvas></div>
+                        </div>
+                        <div class="right"><span class="serif fw600 number">34%</span>
+                            <p class="tone df aie">Of the world’s cloud infrastructure uses AWS. This
+                                number will double by 2050.</p>
+                            <hr>
+                            <p class="ttwo">Innovation in the care and disability sectors can have a direct impact on a
+                                person&#39;s quality of life.<br><br>We do what we do because we believe design and
+                                technology can improve outcomes for those who need it most.</p>
+                        </div>
+                    </div>
+                </section>
+                <hr class="bg-dark mhr">
+                <section class="principles" data-scroll-section>
+                    <h3 class="serif fw500"><span class="db">Principles</span> <span class="db c-red">which guide
+                            us</span></h3>
+                    <ul class="principle-list">
+                        <li class="df fc">
+                            <div class="">
+                                <picture><img width="1" height="1" alt="Alt text"
+                                        src="https://cdn.sanity.io/images/9bnhrjmz/production/d729425e4dd2af7c4a9ad99e75b19cfccc46601f-169x168.svg?auto=format">
+                                </picture><span class="serif fw500">Our participants needs are paramount</span>
+                                <p class="fw500">Our focus is always on understanding your needs in everything that we
+                                    do.</p>
+                            </div>
+                            <hr>
+                        </li>
+                        <li class="df fc">
+                            <div class="">
+                                <picture><img width="1" height="1" alt=""
+                                        src="https://cdn.sanity.io/images/9bnhrjmz/production/b14f50225a0f94ca441d61d19a7a0e59c0e6dd06-167x166.svg?auto=format">
+                                </picture><span class="serif fw500">Stay open and learn from mistakes.</span>
+                                <p class="fw500">Mistakes are where we learn the most. We listen, iterate and
+                                    collaborate to overcome obstacles and improve outcomes for all involved.</p>
+                            </div>
+                            <hr>
+                        </li>
+                        <li class="df fc">
+                            <div class="">
+                                <picture><img width="1" height="1" alt="accessibility "
+                                        src="https://cdn.sanity.io/images/9bnhrjmz/production/5e4d55b6c8bea053d9696b0220746343d0e23d90-113x113.svg?auto=format">
+                                </picture><span class="serif fw500">Design for accessibility always.</span>
+                                <p class="fw500">Research, refine, share and learn in the fields of usability and
+                                    accessibility. Design universally.</p>
+                            </div>
+                            <hr>
+                        </li>
+                        <li class="df fc">
+                            <div class="">
+                                <picture><img width="1" height="1" alt="Alt text"
+                                        src="https://cdn.sanity.io/images/9bnhrjmz/production/3a007f413b5351aa6c9120444f3235e1b2c72000-175x174.svg?auto=format">
+                                </picture><span class="serif fw500">Innovate to improve outcomes.</span>
+                                <p class="fw500">We believe innovation is the best way to improve outcomes for those in
+                                    care.</p>
+                            </div>
+                            <hr>
+                        </li>
+                    </ul>
+                </section>
+                <hr class="bluu" data-scroll-section>
+                <section class="featured df aic" data-scroll-section>
+                    <a class="df jcb" href="/works/">
+                        <div class="back-arrow"><svg viewBox="0 0 100 100" fill="none">
+                                <use xlink:href="#d-feat-larr"></use>
+                            </svg></div>
+                        <div class="df fc">
+                            <h4 class="serif">Featured Projects</h4>
+                            <p>A selection of in house projects, client projects and upcoming projects in our area's of
+                                practice.</p>
+                        </div>
+                        <picture><img width="1" height="1" alt="smiley face"
+                                src="https://d33wubrfki0l68.cloudfront.net/7f9aceee3864e06c8d68e6a170c8138f7f23b1a6/7ede5/static/home/smile.svg">
+                            <svg viewBox="0 0 62 62" fill="none">
+                                <use xlink:href="#m-feat-arr"></use>
+                            </svg></picture>
+                    </a>
+                </section>
+                <div class="footer-wrapper" data-scroll-track="footer">
+                    <footer class="bg-purple-1 c-white">
+                        <div class="footer-bg"></div>
+                        <h5 class="serif">Want our help with something ?</h5>
+                        <div class="df fc contact" style="margin-right: 30px;"><span>CONTACT</span>
+                            <ul>
+                                <li><a target="_blank" rel="noopener noreferrer" class="link"
+                                        href="mailto:mustansir.bohari21@vit.edu">mustansir.bohari21@vit.edu</a></li>
+                                <li><a target="_blank" rel="noopener noreferrer" class="link"
+                                        href="tel:+61 0410 793 294">+91 988 121 0225</a></li>
+                            </ul>
+                        </div>
+                        <div class="df fc pages"><span>PAGES</span>
+                            <ul>
+                                <li><a class="link" href="/works/">Works</a></li>
+                                <li><a class="link" href="/resources/">Resources</a></li>
+                            </ul>
+                        </div>
+                        <div class="reach df aic"><a class="df aic" href="mailto:mustansir.bohari21@vit.edu" target="_blank"
+                                rel="noreferrer nofollow"><span class="text">Reach Out</span> <span class="icon"><img
+                                        width="1" height="1" alt="alt text"
+                                        src="https://d33wubrfki0l68.cloudfront.net/3a19a66f6dc7202610e960e1628f3602f02dd3e3/f71cc/static/home/mail.svg"></span></a>
+                        </div>
+                        <ul class="df aic social">
+                            <li><a aria-label="link to linkedin" target="_blank" rel="noreferrer nofollow"
+                                    href="https://www.linkedin.com/in/bohari-mustansir-772748241/"><img width="1" height="1"
+                                        alt="linkedin icon"
+                                        src="https://d33wubrfki0l68.cloudfront.net/42aef06ea92363d2027210c2da8b2a5281d47db6/6843f/static/footer/ln.svg"></a>
+                            </li>
+                            <li><a aria-label="link to instagram" target="_blank" rel="noreferrer nofollow"
+                                    href="https://www.instagram.com/mustansir_bohari/"><img width="1" height="1"
+                                        alt="instagram icon"
+                                        src="https://d33wubrfki0l68.cloudfront.net/488c400a42231fa852eff6ed51a8a790d5899911/fea98/static/footer/in.svg"></a>
+                            </li>
+                            <li><a aria-label="link to twitter" target="_blank" rel="noreferrer nofollow"
+                                    href="https://twitter.com/MustansirBohari"><img width="1" height="1"
+                                        alt="twitter icon"
+                                        src="https://d33wubrfki0l68.cloudfront.net/c837159a0840d61aae040d11d2978780a4dbe13f/52728/static/footer/tw.svg"></a>
+                            </li>
+                            <li><a aria-label="link to medium" target="_blank" rel="noreferrer nofollow"
+                                    href="#"><img width="1" height="1"
+                                        alt="medium icon"
+                                        src="https://d33wubrfki0l68.cloudfront.net/724b31c25e4cea17739090f4cb6b1702974dee76/8a134/static/footer/md.svg"></a>
+                            </li>
+                        </ul><span class="logo serif df aic">
+                            <picture class="logo-img"><img width="1" height="1" alt="alt text"
+                                    src="https://d33wubrfki0l68.cloudfront.net/542d7f09101e96a5e1bc8c1ac94ef26f438c8431/fdf45/static/footer/logo.svg">
+                            </picture><span>AWS<span class="sans"></span></span>
+                        </span>
+                        <!-- <span class="copy df aic jcb"><span class="copy-text">© 2022 Display, All rights
+                                reserved. &nbsp;</span> <a class="link" id="f-glossary"
+                                href="https://www.notion.so/NDIS-GLOSSARY-OF-TERMS-8c9e396d4c0f402c9a535270001ef2fd"
+                                target="_blank" rel="nofollow noreferrer">Glossary </a><svg id="m-f-top" width="33"
+                                height="33" viewBox="0 0 33 33" fill="none" data-scroll-top>
+                                <use xlink:href="#m-f-top--sprite"></use>
+                            </svg></span> -->
+                    </footer>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="text-reveal"></div><svg id="svg" class="abs" height="0" width="0">
+        <symbol id="d-rarr" viewBox="0 0 17 12">
+            <path fill="#fff"
+                d="M16.53 6.53c.3-.3.3-.77 0-1.06L11.76.7a.75.75 0 00-1.06 1.06L14.94 6l-4.24 4.24a.75.75 0 001.06 1.06l4.77-4.77zM0 6.75h16v-1.5H0v1.5z" />
+        </symbol>
+        <symbol id="m-feat-arr" viewBox="0 0 62 62">
+            <circle cx="30.81" cy="30.81" r="30.81" fill="#FF9776" />
+            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.46"
+                d="M37.88 34.38l.85-10.66-10.66-.85M20.07 39.63l18.66-15.9" />
+        </symbol>
+        <symbol id="case-item-arr" viewBox="0 0 19 19">
+            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.78"
+                d="M1.23 9.29h16.04M9.25 1.26l8.02 8.03-8.02 8.02" />
+        </symbol>
+        <symbol id="d-feat-larr" viewBox="0 0 37 37">
+            <path stroke="#FF9776" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                d="M12.39 13.98L2.1 24.25 12.4 34.53" />
+            <path stroke="#FF9776" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                d="M35 1.64v14.4a8.22 8.22 0 01-8.22 8.21H2.1" />
+        </symbol>
+        <symbol id="d-case-rarr" viewBox="0 0 100 100">
+            <path stroke="#FF9776" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                d="M60.61 54.11L70.9 43.83 60.6 33.56" />
+            <path stroke="#FF9776" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                d="M38 66.44V52.06a8.22 8.22 0 018.22-8.23H70.9" />
+        </symbol>
+        <symbol id="m-case-rarr" viewBox="0 0 62 62">
+            <circle cx="30.81" cy="30.81" r="30.81" fill="#FF9776" />
+            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.46"
+                d="M34.1 39.24l7.56-7.56-7.56-7.56M17.14 31.68h24.52" />
+        </symbol>
+        <symbol id="p-about" viewBox="0 0 46 49">
+            <ellipse cx="23" cy="24.68" fill="#fff" rx="23" ry="23.82" />
+            <path stroke="#8283DA" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M23 15.52v3.66M23 30.18v3.66M16.75 18.2l2.5 2.6M26.75 28.56l2.5 2.6M14.15 24.68h3.54M28.3 24.68h3.55M16.75 31.16l2.5-2.6M26.75 20.8l2.5-2.6" />
+        </symbol>
+        <symbol id="p-works" viewBox="0 0 46 46">
+            <circle cx="23" cy="23" r="23" fill="#fff" />
+            <path stroke="#FF9776" stroke-linejoin="round" stroke-width="2"
+                d="M23 15s.75 4.13 2.43 5.92C27.11 22.7 31 23.5 31 23.5s-3.89.8-5.57 2.58C23.75 27.87 23 32 23 32s-.75-4.13-2.43-5.92C18.89 24.3 15 23.5 15 23.5s3.89-.8 5.57-2.58C22.25 19.13 23 15 23 15z" />
+        </symbol>
+        <symbol id="p-resources" viewBox="0 0 46 46">
+            <circle cx="23" cy="23" r="23" fill="#fff" />
+            <path stroke="#FF667D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M14.15 15.92h5.31A3.54 3.54 0 0123 19.46v12.39a2.65 2.65 0 00-2.65-2.66h-6.2V15.92z" />
+            <path stroke="#FF667D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M31.85 15.92h-5.31A3.54 3.54 0 0023 19.46v12.39a2.65 2.65 0 012.65-2.66h6.2V15.92z" />
+        </symbol>
+        <symbol id="p-back" viewBox="0 0 46 46">
+            <circle cx="23" cy="23" r="23" fill="#fff" />
+            <path stroke="#FF667D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M29 23H17M21.7 27.7L17 23l4.7-4.7" />
+        </symbol>
+        <symbol id="m-f-top--sprite" viewBox="0 0 33 33">
+            <circle cx="16.5" cy="16.5" r="16.17" stroke="#fff" stroke-opacity=".25" stroke-width=".66"
+                transform="rotate(-180 16.5 16.5)" />
+            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.32"
+                d="M16.5 21v-9M12 16.5l4.5-4.5 4.5 4.5" />
+        </symbol>
+        <symbol id="quote-sprite" viewBox="0 0 78 76">
+            <path fill="#56CCF2"
+                d="M16.9 42.47c5.3 0 9.48 1.53 12.54 4.58 3.21 2.9 4.82 6.84 4.82 11.83 0 4.82-1.6 8.76-4.82 11.82-3.06 2.9-7.24 4.34-12.55 4.34-5.15 0-9.25-1.45-12.3-4.34C1.52 67.8 0 63.94 0 59.12v-1.93C.32 50.27 6.35 31.2 18.1 0h15.92v1.45L8.2 43.19l1.21.48v.25c2.1-.97 4.58-1.45 7.48-1.45zM61.04 0H77.2v1.45L51.4 43.19l.96.48v.25a18.8 18.8 0 017.48-1.45c5.3 0 9.5 1.53 12.55 4.58 3.22 2.9 4.82 6.84 4.82 11.83 0 4.82-1.6 8.76-4.82 11.82-3.06 2.9-7.24 4.34-12.55 4.34-5.15 0-9.25-1.45-12.3-4.34-2.9-2.9-4.35-6.76-4.35-11.58v-1.93C43.51 50.27 49.47 31.2 61.05 0z" />
+        </symbol>
+    </svg>
+    <script defer="defer">(function () {
+            var s = document.createElement('script'); var h = document.querySelector('head') || document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function () {
+                acsbJS.init({
+                    statementLink: '', footerHtml
+                        : '', hideMobile: false, hideTrigger: false, disableBgProcess: false, language: 'en', position: 'left', leadColor: '#ff667d', triggerColor: '#ff667d', triggerRadius: '50%', triggerPositionX: 'right', triggerPositionY: 'bottom', triggerIcon
+                        : 'wheels', triggerSize: 'medium', triggerOffsetX: 20, triggerOffsetY: 20, mobile: { triggerSize: 'small', triggerPositionX: 'right', triggerPositionY: 'center', triggerOffsetX: 10, triggerOffsetY: 0, triggerRadius: '50%' }
+                });
+            };
+            h.appendChild(s);
+        })();
+    </script>
+</body>
+
+</html>

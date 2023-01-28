@@ -1,0 +1,26 @@
+html, body {  
+  margin: 0;
+  padding: 0;
+  background-color: #f0f1c1;
+}
+.node {
+  cursor: pointer;
+}
+
+.node text {
+  font: 10px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: rgb(55, 68, 105);
+  stroke-width: 1px;
+}
+
+#id1{
+  width: 180px;
+}
+
+rect{
+  width: 120px;
+}
